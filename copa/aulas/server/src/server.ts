@@ -6,7 +6,7 @@ async function bootstrap() {
   });
   // http://localhost:3333/pools/count
   fastify.get("/pools/count", () => {
-    return { count: 0 };
+    return { count: 1000000 };
   });
 
   await fastify.listen({ port: 3333 });
